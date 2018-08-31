@@ -5,7 +5,7 @@ def turn(board)
   #input to index
   index = input_to_index(user_input)
   token = current_player(board)
-  
+
   #check for validation
   if valid_move?(board,index)
     puts 'valid move'
@@ -60,5 +60,5 @@ end
 def move(board, index, token)
   board[index] = token
   play(board)
-  
+
 end
