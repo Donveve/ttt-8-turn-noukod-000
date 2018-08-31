@@ -7,7 +7,7 @@ def move(array, index, name = "X")
 end
 #if index is valid...show the board
 def position_taken?(board, answer)
-  board[answer] != " " 
+  board[answer] != " "
 end
 
 def display_board(board)
@@ -29,7 +29,7 @@ def turn(board)
     else
       puts "That is an invalid entry!"
       turn(board)
-    end 
+    end
 end
 
 #else ask for input again until you get valid input
