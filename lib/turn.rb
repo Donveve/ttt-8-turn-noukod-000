@@ -1,3 +1,11 @@
+def display_board(board)
+   puts " #{board[0]} | #{board[1]} | #{board[2]} "
+   puts "-----------"
+   puts " #{board[3]} | #{board[4]} | #{board[5]} "
+   puts "-----------"
+   puts " #{board[6]} | #{board[7]} | #{board[8]} "
+end
+
 def valid_move?(number_entered, board)
   number_entered.between?(0, 8) && !(position_taken?(board, number_entered))
 end
@@ -9,15 +17,6 @@ end
 def position_taken?(board, answer)
   board[answer] != " "
 end
-
-def display_board(board)
-   puts " #{board[0]} | #{board[1]} | #{board[2]} "
-   puts "-----------"
-   puts " #{board[3]} | #{board[4]} | #{board[5]} "
-   puts "-----------"
-   puts " #{board[6]} | #{board[7]} | #{board[8]} "
-end
-
 #this method need to be developed ________________
 def turn(board)
     puts "Please enter 1-9:"
@@ -35,7 +34,4 @@ end
 #else ask for input again until you get valid input
 #_________________________________________________
 
-board = ["X"," "," "," "," "," "," "," "," "]
-puts "Welcome to Tic Tac Toe!"
-puts display_board(board)
-turn(board)
+#
